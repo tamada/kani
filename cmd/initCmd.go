@@ -8,8 +8,8 @@ import (
 	"path/filepath"
 	"strings"
 
+	"github.com/ma-sa321/kani/utils"
 	"github.com/spf13/cobra"
-	"github.com/tamada/kani/utils"
 )
 
 var initCmd = &cobra.Command{

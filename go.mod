@@ -1,4 +1,4 @@
-module github.com/tamada/kani
+module github.com/ma-sa321/kani
 
 go 1.15
 

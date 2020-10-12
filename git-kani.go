@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/tamada/kani/cmd"
+	"github.com/ma-sa321/kani/cmd"
 )
 
 func goMain(args []string) int {

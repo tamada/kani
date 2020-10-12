@@ -9,7 +9,7 @@ https://docs.google.com/document/d/1hgXWROmRVbgKUdC_ZP-yALivhzJZqZsT9qCH2Hid9UY/
 
 
 * `scripts` 以下に分析用のスクリプトを準備する．
-    * 本番環境では，`/usr/local/Cellar/kani/scripts` 以下にインストールされる．
+    * 本番環境では，`/usr/local/opt/kani/scripts` 以下にインストールされる．
 * `git kani init`で対象プロジェクトを`kani`での分析対象とする．
 * `git kani disable/enable` で分析の一時停止/再開を行う．
 * `git kani deinit` で対象プロジェクトを分析対象から外す．
@@ -58,7 +58,7 @@ $ git kani deinit
 ## インストール方法
 
 ```sh
-$ brew install tamadalab/bre/kani
+$ brew install tamadalab/brew/kani
 ```
 
 上記コマンドにて，以下のようなディレクトリが作成される．
@@ -79,7 +79,7 @@ $ brew install tamadalab/bre/kani
 そのため，`~/.zshrc` の最後に，次の1行を追加すればOKにするようにしました．
 
 ```sh
-eval $(git kani init -)
+eval "$(git kani init -)"
 ```
 
 ## 実装情報
