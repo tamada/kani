@@ -10,7 +10,9 @@
 
 GREP=grep 
 # GREP=rg
-SCRIPT_DIR=$(dirname $0)
+
+# https://qiita.com/yudoufu/items/48cb6fb71e5b498b2532
+SCRIPT_DIR=$(dirname ${BASH_SORUCE:-$0})
 
 function is_git_dir_not_found() {
     if [[ $1 == "" ]]
